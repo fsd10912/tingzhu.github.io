@@ -13,6 +13,7 @@ import matplotlib.pyplot
 import matplotlib.animation 
 import agentframework4
 import tkinter
+import csv
 
 num_of_agents = 10
 num_of_iterations = 100
@@ -30,8 +31,16 @@ content = r.text
 soup = bs4.BeautifulSoup(content, 'html.parser')
 td_ys = soup.find_all(attrs={"class" : "y"})
 td_xs = soup.find_all(attrs={"class" : "x"})
-print(td_ys)
-print(td_xs)
+#print(td_ys)
+#print(td_xs)
+
+with open('in.txt', newline='') as f:
+    reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
+    for row in reader:
+        for value in row:
+            rowlist.append(value)  
+        environment.append(rowlist)
+f.close()
 
 for i in range(num_of_agents):
     y = int(td_ys[i].text)
@@ -42,12 +51,7 @@ carry_on = True
 
 def run():
     animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
-    canvas.show()
-
-root = tkinter.Tk()
-root.wm_title("Model")
-canvas = matplotlib.backends.backend_tkagg.FigureCanvasTkAgg(fig, master=root)
-canvas._tkcanvas.pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
+    canvas.draw()
 
 def update(frame_number):   
     fig.clear()   
@@ -63,7 +67,7 @@ def update(frame_number):
     matplotlib.pyplot.imshow(environment)
     
     for i in range(num_of_agents):
-       matplotlib.pyplot.scatter(agents[i].y,agents[i].x)	
+       matplotlib.pyplot.scatter(agents[i].x,agents[i].y)	
        
 def gen_function():
         a = 0
@@ -71,5 +75,15 @@ def gen_function():
         while (a < 10) & (carry_on) :
             yield a			# Returns control and waits next call.
             a = a + 1
+            
+root = tkinter.Tk()
+menu_bar = tkinter.Menu(root)
+root.config(menu=menu_bar)
+model_menu = tkinter.Menu(menu_bar)
+menu_bar.add_cascade(label="Model", menu=model_menu)
+model_menu.add_command(label="Run model", command=run)
+root.wm_title("Model")
+canvas = matplotlib.backends.backend_tkagg.FigureCanvasTkAgg(fig, master=root)
+canvas._tkcanvas.pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
 
 tkinter.mainloop()
