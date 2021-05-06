@@ -8,22 +8,22 @@ A link to the link [model](model.txt)
 ### Practical2: Code shrinking I
 Practice content: [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
 
-A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+A link to the code [model1.txt](model1.txt) 
 
 ### Practical3: Code shrinking II
 Practice content: [Code shrinking II](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part3/index.html) 
 
-A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+A link to the code [model2](model2.txt) 
 
 ### Practical4: Building tools
 Practice content: [Building tools](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part4/index.html) 
 
-A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+A link to the code [model3](model3.txt) 
 
 ### Practical5: Agents!
 Practice content: [Agents!](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part5/index.html) 
 
-A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+A link to the code [model4](model4.txt) and [model4.txt](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html)
 
 ### Practical6: I/O
 Practice content: [I/O](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part6/index.html) 
