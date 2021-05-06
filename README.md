@@ -1,8 +1,50 @@
-## Welcome to GitHub Pages
+# Assignment1: An online portfolio of the practical work
 
-You can use the [editor on GitHub](https://github.com/fsd10912/tingzhu.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Practical1: Agent Based Modelling
+Practice content: [Agent Based Modelling](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part1/index.html) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A link to the link [model](https://jekyllrb.com/) 
+
+### Practical2: Code shrinking I
+Practice content: [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical3: Code shrinking II
+Practice content: [Code shrinking II](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part3/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical4: Building tools
+Practice content: [Building tools](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part4/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical5: Agents!
+Practice content: [Agents!](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part5/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical6: I/O
+Practice content: [I/O](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part6/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical7: Communicating
+Practice content: [Communicating](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part7/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical8: Animation / Behaviour
+Practice content: [Animation / Behaviour](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part8/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
+### Practical9: GUI / Web scraping
+Practice content: [GUI / Web scraping](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/index.html) 
+
+A link to the code [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
+
 
 ### Markdown
 
