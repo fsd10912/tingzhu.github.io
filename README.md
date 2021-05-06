@@ -3,7 +3,7 @@
 ### Practical1: Agent Based Modelling
 Practice content: [Agent Based Modelling](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part1/index.html) 
 
-A link to the link [model.txt](model.txt) 
+A link to the code [model.txt](model.txt) 
 
 ### Practical2: Code shrinking I
 Practice content: [Code shrinking I](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part2/index.html) 
