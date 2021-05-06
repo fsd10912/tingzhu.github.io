@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  5 15:00:12 2021
+
+@author: mac
+"""
+
+import csv
+import matplotlib.pyplot
+import agentframework2
+
+rowlist = []
+environment = []
+agents = []
+num_of_agents = 10
+num_of_iterations = 100
+neighbourhood = 20
+
+with open('in.txt', newline='') as f:
+    reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
+    for row in reader:
+        for value in row:
+            rowlist.append(value)  
+        environment.append(rowlist)
+
+for i in range(num_of_agents):
+    agents.append(agentframework2.Agent(environment, agents)) 
+
+for j in range(num_of_iterations):
+    for i in range(num_of_agents):
+        agents[i].move()
+        agents[i].eat()
+        agents[i].share_with_neighbours(neighbourhood)
+
+matplotlib.pyplot.xlim(0, 99)
+matplotlib.pyplot.ylim(0, 99)
+matplotlib.pyplot.imshow(environment)
+for i in range(num_of_agents):
+    matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
+matplotlib.pyplot.show()
