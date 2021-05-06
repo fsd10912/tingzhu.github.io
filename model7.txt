@@ -1,0 +1,70 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  5 21:01:55 2021
+
+@author: mac
+"""
+import random
+#import operator
+import matplotlib.pyplot
+import matplotlib.animation 
+import csv
+import agentframework3
+
+num_of_agents = 10
+num_of_iterations = 100
+agents = []
+rowlist = []
+environment = []
+neighbourhood = 20
+x = random.randint(0, 99)
+y = random.randint(0, 99)
+
+fig = matplotlib.pyplot.figure(figsize=(7, 7))
+ax = fig.add_axes([0, 0, 1, 1])
+#ax.set_autoscale_on(False)
+# Make the agents.
+for i in range(num_of_agents):
+    agents.append(agentframework3.Agent(environment, agents, x, y)) 
+
+with open('in.txt', newline='') as f:
+    reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
+    for row in reader:
+        for value in row:
+            rowlist.append(value)  
+        environment.append(rowlist)
+
+carry_on = True	
+
+def update(frame_number):   
+    fig.clear()   
+    global carry_on   
+    for j in range(num_of_iterations):
+        for i in range(num_of_agents):
+            agents[i].move()
+            agents[i].eat()
+            agents[i].share_with_neighbours(neighbourhood) 
+
+    matplotlib.pyplot.xlim(0, 99)
+    matplotlib.pyplot.ylim(0, 99)
+    matplotlib.pyplot.imshow(environment)
+    
+    for i in range(num_of_agents):
+       matplotlib.pyplot.scatter(agents[i].y,agents[i].x)	
+       
+def gen_function():
+        a = 0
+        global carry_on #Not actually needed as we're not assigning, but clearer
+        while (a < 10) & (carry_on) :
+            yield a			# Returns control and waits next call.
+            a = a + 1
+'''
+for j in range(num_of_iterations):
+    for i in range(num_of_agents):
+        agents[i].move()
+        agents[i].eat()
+        agents[i].share_with_neighbours(neighbourhood)
+'''
+#animation = matplotlib.animation.FuncAnimation(fig, update, interval=1, repeat=False, frames=10)
+animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
+matplotlib.pyplot.show()
