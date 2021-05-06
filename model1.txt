@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May  4 11:44:04 2021
+
+@author: mac
+"""
+import random
+import operator
+# matplotlib.pyplot is used to plot data in graphs
+import matplotlib.pyplot
+
+agents = []
+
+# Create the first set of coordinates
+agents.append([random.randint(0,99),random.randint(0,99)])
+# Create the second set of coordinates
+agents.append([random.randint(0,99),random.randint(0,99)])
+
+print(agents)
+print(max(agents))
+print(max(agents, key=operator.itemgetter(1)))
+
+matplotlib.pyplot.ylim(0, 99)
+matplotlib.pyplot.xlim(0, 99)
+matplotlib.pyplot.scatter(agents[0][1],agents[0][0],color='red')
+matplotlib.pyplot.scatter(agents[1][1],agents[1][0],color='green')
+matplotlib.pyplot.show()
