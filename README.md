@@ -1,4 +1,5 @@
 # Assignment1: An online portfolio of the practical work
+- (Go to the Page: [tingzhu.github](https://github.com/fsd10912/tingzhu.github.io))
 
 ### Practical1: Agent Based Modelling
 Practice content: [Agent Based Modelling](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part1/index.html) 
@@ -44,6 +45,3 @@ A link to the code [model7.txt](model7.txt) and [agentframework3.txt](agentframe
 Practice content: [GUI / Web scraping](https://www.geog.leeds.ac.uk/courses/computing/practicals/python/agent-framework/part9/index.html) 
 
 A link to the code [model8.txt](model8.txt) and [agentframework4.txt](agentframework4.txt)
-
-
-(Go to the Page[tingzhu.github](https://github.com/fsd10912/tingzhu.github.io))
